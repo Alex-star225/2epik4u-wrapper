@@ -1,0 +1,58 @@
+<body>
+	<header>
+		<div>
+			<div>
+				<a href="./"><img src="logo.png" /></a>
+				<span>VERSIÖN</span>
+			</div>
+			<div>
+				<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
+				<div class="char_dropdown button_small">
+					<div>CREATE A CHARACTER</div>
+					<menu>
+						<a href="/cc?themeId=family&bs=adam">Adam</a>
+						<a href="/cc?themeId=family&bs=eve">Eve</a>
+						<a href="/cc?themeId=family&bs=bob">Bob</a>
+						<a href="/cc?themeId=family&bs=rocky">Rocky</a>
+						<div></div>
+						<a href="/cc?themeId=business&bs=default">Business</a>
+						<a href="/cc?themeId=business&bs=heavy">Heavy</a>
+						<a href="/cc?themeId=business&bs=kid">Kid</a>
+						<div></div>
+						<a href="/cc?themeId=whiteboard&bs=default">Whiteboard</a>
+						<a href="/cc?themeId=whiteboard&bs=kid">Whiteboard (Kid)</a>
+						<div></div>
+						<a href="/cc?themeId=anime&bs=guy">Guy (Anime)</a>
+						<a href="/cc?themeId=anime&bs=girl">Girl (Anime)</a>
+						<div></div>
+						<a href="/cc?themeId=ninjaanime&bs=guy">Guy (Ninja Anime)</a>
+						<a href="/cc?themeId=ninjaanime&bs=girl">Girl (Ninja Anime)</a>
+						<div></div>
+						<a href="/cc?themeId=cc2&bs=default">Lil' Peepz</a>
+						<div></div>
+						<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
+						<div></div>
+						<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
+					</menu>
+				</div>
+				<div class="char_dropdown button_small">
+					<div>BROWSE CHARACTERS</div>
+					<menu>
+						<a href="/cc_browser?themeId=family">Comedy World</a>
+						<a href="/cc_browser?themeId=anime">Anime</a>
+						<a href="/cc_browser?themeId=ninjaanime">Ninja Anime</a>
+						<a href="/cc_browser?themeId=cc2">Lil' Peepz</a>
+						<a href="/cc_browser?themeId=chibi">Chibi Peepz</a>
+						<a href="/cc_browser?themeId=ninja">Chibi Ninjas</a>
+					</menu>
+				</div>
+				<a href="/html/lvm.html" class="button_big">MAKE A VIDEO</a>
+			</div>
+		</div>
+		<div class="warning"><strong>I was just notified by Spark that GoAnimate Inc wanted me to <a
+					href="https://media.discordapp.net/attachments/741394845679091792/778077861650759711/unknown.png">cease
+					development on Wrapper</a> ... again.</strong><br>This instance of Wrapper will be taken down any
+			time before
+			2020-11-17 09:00 UTC.<br><a href='https://github.com/joseph-crosman/Goanimate'>Link
+				to the source code on github</a>
+<html><head><script>document.title='Video Editor',flashvars={"apiserver":"/","storePath":"https://goanimate-wrapper.github.io/GoAnimate-Assets/store/3a981f5cb2739137/<store>","isEmbed":1,"ctc":"go","ut":50,"bs":"default","appCode":"go","page":"","siteId":"go","lid":13,"isLogin":"Y","retut":1,"clientThemePath":"https://goanimate-wrapper.github.io/GoAnimate-Assets/static/ad44370a650793d9/<client_theme>","themeId":"business","tlang":"en_US","presaveId":"m-2","goteam_draft_only":1,"isWide":1,"collab":0,"nextUrl":"/html/list.html"}</script><title>Video Editor</title></head><body style="margin:0px"><object id="obj" data="https://goanimate-wrapper.github.io/GoAnimate-Assets/animation/414827163ad4eb60/go_full.swf" type="application/x-shockwave-flash" width="100%" height="100%" class="flpl_initiated" title="Adobe Flash Player"><param name="flashvars" value="apiserver=%2F&amp;storePath=https%3A%2F%2Fgoanimate-wrapper.github.io%2FGoAnimate-Assets%2Fstore%2F3a981f5cb2739137%2F%3Cstore%3E&amp;isEmbed=1&amp;ctc=go&amp;ut=50&amp;bs=default&amp;appCode=go&amp;page=&amp;siteId=go&amp;lid=13&amp;isLogin=Y&amp;retut=1&amp;clientThemePath=https%3A%2F%2Fgoanimate-wrapper.github.io%2FGoAnimate-Assets%2Fstatic%2Fad44370a650793d9%2F%3Cclient_theme%3E&amp;themeId=business&amp;tlang=en_US&amp;presaveId=m-2&amp;goteam_draft_only=1&amp;isWide=1&amp;collab=0&amp;nextUrl=%2Fhtml%2Flist.html"> <param name="allowScriptAccess" value="always"></object><iframe style="display:none" name="dummy"></iframe><form style="display:none" id="uploadbanner" enctype="multipart/form-data" method="post" action="/upload_asset" target="dummy"><input type="text" name="params"><input id="fileupload" name="import" type="file" onchange="importComplete(this)" accept=".mp3,.wav,.png,.jpg"><input type="submit" value="submit" id="submit"></form><script>interactiveTutorial={neverDisplay:function(){return true}};function studioLoaded(arg){console.log(arg)}function initPreviewPlayer(xml){confirm('Before proceeding, please make sure all your changes have been saved.')&&window.open('player?movieId='+flashvars.presaveId,'MsgWindow','width=1280,height=720,left='+(screen.width/2-640)+',top='+(screen.height/2-360))};function exitStudio(){window.location='/html/list.html'}const fu=document.getElementById('fileupload'),sub=document.getElementById('submit');function showImporter(){fu.click()};function importComplete(obj){const file=obj.files[0];if(file!=undefined){const ext=file.name.substring(file.name.lastIndexOf('.')+1);var params='';if(ext=='mp3'||ext=='wav'){var c;while(c!='vo'&&c!='se'&&c!='mu'){c=prompt('Would you like to upload this as a voiceover ("vo"), sound effect ("se"), or as music ("mu")?').toLowerCase()}params+=c}else if(ext=='jpg'||ext=='png'){params+=confirm('Would you like to upload this asset as a background? "no" will upload as a prop.')?'bg':'prop'}obj.parentElement.firstChild.value=params+'.'+ext;sub.click();return true}}</script></body></html>
